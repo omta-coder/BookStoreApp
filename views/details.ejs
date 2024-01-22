@@ -1,0 +1,20 @@
+<%- include("header")%>
+<%- include("nav")%>
+
+<div class="show">
+
+    <h2>View Details</h2>
+    <h1><%= book.name%></h1>
+    <img height="200" src="<%= book.image%>" alt="">
+    <hr>
+
+<div class="btn">
+    <a href="/delete/<%= book.id%>">Delete</a>
+    &nbsp;&nbsp;
+    <a href="/update/<%= book.id%>">Update</a>
+</div>
+</div>
+
+
+
+<%- include("footer")%>

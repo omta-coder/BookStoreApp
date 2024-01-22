@@ -1,0 +1,27 @@
+<%- include("header")%>
+<%- include("nav")%>
+
+
+<form action="/register" method="post">
+    <h1>Registration Page</h1>
+     <br><br><br><br>
+    <input type="url" name="image" placeholder="Image">
+    <br><br>
+    <input type="text" name="name" placeholder="Name">
+    <br><br>
+    <input type="text" name="author" placeholder="Author">
+    <br><br>
+    <textarea  name="description" placeholder="Description"></textarea>
+    <br><br>
+    <input type="number" name="page" placeholder="Page">
+    <br><br>
+    <input type="text" name="publication" placeholder="Publication">
+    <br><br>
+    <input type="number" name="year" placeholder="Year">
+    <br><br>
+    <input type="number" name="prize" placeholder="Prize">
+    <br><br>
+    <button>Submit</button>
+
+</form>
+<%- include("footer")%>

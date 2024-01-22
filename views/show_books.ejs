@@ -1,0 +1,14 @@
+<%- include("header")%>
+<%- include("nav")%>
+<div class="show">
+      <h1>This is Show</h1>
+<% books.forEach(function(book ,index){%>
+      <h3><%= book.name%></h3>
+      <h3><%= book.author%></h3>
+      <p><%= book.description%></p>
+      <hr>
+      <a href="/details/<%= book._id%>">Explore More</a>
+<%})%>
+</div>
+<%- include("footer")%>
+

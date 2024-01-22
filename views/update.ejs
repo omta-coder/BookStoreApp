@@ -1,0 +1,29 @@
+<%- include("header")%>
+<%- include("nav")%>
+
+
+<form action="/update/<%= book.id%>" method="post">
+    <h1>Update Page</h1>
+    <br><br><br>
+    <input disabled value="<%= book._id%>" type="number" name="id" placeholder="Id">
+    <br><br>
+    <input value="<%= book.image%>" type="url" name="image" placeholder="Image">
+    <br><br>
+    <input value="<%= book.name%>" type="text" name="name" placeholder="Name">
+    <br><br>
+    <input value="<%= book.author%>" type="text" name="author" placeholder="Author">
+    <br><br>
+    <textarea  name="description" placeholder="Description"><%= book.description%></textarea>
+    <br><br>
+    <input value="<%= book.page%>" type="number" name="page" placeholder="Page">
+    <br><br>
+    <input value="<%= book.publication%>" type="text" name="publication" placeholder="Publication">
+    <br><br>
+    <input value="<%= book.year%>" type="number" name="year" placeholder="Year">
+    <br><br>
+    <input value="<%= book.prize%>" type="number" name="prize" placeholder="Prize">
+    <br><br>
+    <button>Update</button>
+
+</form>
+<%- include("footer")%>
